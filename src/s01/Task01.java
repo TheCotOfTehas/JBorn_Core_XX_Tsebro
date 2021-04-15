@@ -19,6 +19,16 @@ public class Task01
     }
     public static   double[] Sort(double[] number)
     {
+        double num;
+        for (int y=0;y<number.length-1;y++){
+            for (int i = 0; i < number.length - 1; i++){
+                if (number[i] > number[i + 1]) {
+                    num = number[i + 1];
+                    number[i + 1] = number[i];
+                    number[i] = num;
+                }
+            }
+        }
         return number;
     }
 }
